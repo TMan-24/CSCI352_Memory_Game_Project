@@ -16,20 +16,18 @@ using System.Windows.Shapes;
 namespace Memory_Game
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for NormalPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class NormalPage : Page
     {
-        public MainWindow()
+        public NormalPage()
         {
             InitializeComponent();
-            Loaded += loadGame;
         }
 
-        private void loadGame(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Main.NavigationService.Navigate(new StartMenu());
+            this.NavigationService.Navigate(new StartMenu());
         }
-
     }
 }

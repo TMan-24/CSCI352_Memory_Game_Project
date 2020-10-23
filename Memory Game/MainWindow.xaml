@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Memory_Game"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    
+        Title="Memory Game" Height="800" Width="1150">
+
     <Grid>
-        
+        <Frame Name="Main" HorizontalAlignment="Left" Height="770" VerticalAlignment="Top" Width="1143" Margin="0,0,-1,0" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>
