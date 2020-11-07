@@ -23,11 +23,13 @@ namespace Memory_Game
         public StartMenu()
         {
             InitializeComponent();
+            Music_on.Visibility = Visibility.Hidden;
         }
 
         private void Easy_Click(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new Easypage());
+            
         }
 
         private void Normal_Click(object sender, RoutedEventArgs e)
@@ -40,9 +42,19 @@ namespace Memory_Game
             this.NavigationService.Navigate(new HardPage());
         }
 
-        private void Settings_Click(object sender, RoutedEventArgs e)
+        private void Music_on_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new SettingsPage());
+            Sound.PlayBackgroundMusic();
+            Music_on.Visibility = Visibility.Hidden;
+            Music_off.Visibility = Visibility.Visible;
         }
+
+        private void Music_off_Click(object sender, RoutedEventArgs e)
+        {
+            Sound.MuteBackgroundMusic();
+            Music_on.Visibility = Visibility.Visible;
+            Music_off.Visibility = Visibility.Hidden;
+        }
+
     }
 }
