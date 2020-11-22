@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * Arthur: Tony Anderson, Vrushank Mali
+ * Date: 11/22/2020
+ * Filename: NormalWinnerpage.xaml.cs
+ * Description: This file is the results logic for normal when the player
+ *              wins. It allows them to quit.
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * Arthur: Tony Anderson, Vrushank Mali
+ * Date: 11/22/2020
+ * Filename: StartMenu.xaml.cs
+ * Description: This file is the logic for the Main Menu of the whole
+ *              game. It takes the user to the difficulty they chose.
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -42,31 +50,5 @@ namespace Memory_Game
         {
             this.NavigationService.Navigate(new HardPage());
         }
-
-        /*public void Pausechecker()
-        {
-            Pausepage a = new Pausepage();
-            int b = a.Resumecheck();
-            if (b == 1)
-            {
-                this.NavigationService.GoBack();
-            }
-            else
-            {
-                int c = a.Restartcheck();
-                if (c == 2)
-                {
-                    this.NavigationService.Refresh();
-                }
-                else
-                {
-                    int d = a.Quitcheck();
-                    if (d == 3)
-                    {
-                        this.NavigationService.Navigate(new StartMenu());
-                    }
-                }
-            }
-        }*/
     }
 }

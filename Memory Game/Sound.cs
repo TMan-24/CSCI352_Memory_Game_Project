@@ -1,4 +1,11 @@
-﻿using Microsoft.Win32;
+﻿/*
+ * Arthur: Tony Anderson, Vrushank Mali
+ * Date: 11/22/2020
+ * Filename: Sound.cs
+ * Description: This file gets and plays the background music from file.
+ */
+
+using Microsoft.Win32;
 using System;
 using System.IO;
 using System.Linq;

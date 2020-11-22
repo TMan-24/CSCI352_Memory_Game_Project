@@ -1,4 +1,19 @@
-﻿using System;
+﻿/*
+ * Arthur: Tony Anderson, Vrushank Mali
+ * Date: 11/22/2020
+ * Filename: Nomalpage.xaml.cs
+ * Description: This file is the Normal page logic. It starts a timer, 
+ *             shows the pictures for 10 seconds and then hides
+ *             them, shows the pictures when the cover button
+ *             is clicked, checks if there is a match (gives a score 
+ *             if there is, resets pictures if there is not), lets the 
+ *             user pause, mute and unmute music, and finally either,
+ *             when all matches are made, goes to the winner page, or
+ *             if the timer goes to zero, goes to the loser page.
+ *    
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

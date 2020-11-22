@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * Arthur: Tony Anderson, Vrushank Mali
+ * Date: 11/22/2020
+ * Filename: MainWindow.xaml.cs
+ * Description: This file is the logic for the Main window for the program.
+ *              It starts a new instance of start menu at runtime.
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Media;

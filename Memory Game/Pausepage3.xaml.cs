@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * Arthur: Tony Anderson, Vrushank Mali
+ * Date: 11/22/2020
+ * Filename: Pausepage3.xaml.cs
+ * Description: This is the Hard difficulty pause logic. It allows the 
+ *              user to resume, restart, or quit the Hard Difficulty
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
