@@ -59,24 +59,67 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Easyloserpage.xaml.cs">
+      <DependentUpon>Easyloserpage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Easypage.xaml.cs">
       <DependentUpon>Easypage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EasyWinnerpage.xaml.cs">
+      <DependentUpon>EasyWinnerpage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Hardloserpage.xaml.cs">
+      <DependentUpon>Hardloserpage.xaml</DependentUpon>
     </Compile>
     <Compile Include="HardPage.xaml.cs">
       <DependentUpon>HardPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="HardWinnerpage.xaml.cs">
+      <DependentUpon>HardWinnerpage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Normalloserpage.xaml.cs">
+      <DependentUpon>Normalloserpage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="NormalPage.xaml.cs">
       <DependentUpon>NormalPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NormalWinnerpage.xaml.cs">
+      <DependentUpon>NormalWinnerpage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pausepage.xaml.cs">
+      <DependentUpon>Pausepage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pausepage2.xaml.cs">
+      <DependentUpon>Pausepage2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pausepage3.xaml.cs">
+      <DependentUpon>Pausepage3.xaml</DependentUpon>
     </Compile>
     <Compile Include="Sound.cs" />
     <Compile Include="StartMenu.xaml.cs">
       <DependentUpon>StartMenu.xaml</DependentUpon>
     </Compile>
+    <Page Include="Easyloserpage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Easypage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="EasyWinnerpage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Hardloserpage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="HardPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HardWinnerpage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -92,7 +135,27 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Normalloserpage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="NormalPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NormalWinnerpage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pausepage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pausepage2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pausepage3.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -138,6 +201,24 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Assets\wood_background.jpg" />
+    <Resource Include="Assets\Memory game photos\Easy\13-car-integratedpieces.png" />
+    <Resource Include="Assets\Memory game photos\Easy\353snw-_2969_.jpg" />
+    <Resource Include="Assets\Memory game photos\Easy\Bananas-5c6a36a346e0fb0001f0e4a3.jpg" />
+    <Resource Include="Assets\Memory game photos\Easy\download.png" />
+    <Resource Include="Assets\Memory game photos\Hard\1.jpg" />
+    <Resource Include="Assets\Memory game photos\Hard\12wmt-articleLarge-v5.jpg" />
+    <Resource Include="Assets\Memory game photos\Hard\depositphotos_35644115-stock-photo-rubiks-cube-on-a-white1.jpg" />
+    <Resource Include="Assets\Memory game photos\Hard\HDN_PH-Rubiks-cube.13249.jpg" />
+    <Resource Include="Assets\Memory game photos\Hard\pexels-photo-2554461.jpeg" />
+    <Resource Include="Assets\Memory game photos\Hard\Rubiks_Cube-900x522.jpg" />
+    <Resource Include="Assets\Memory game photos\Hard\teach-you-how-to-solve-a-rubiks-cube-3x3.jpeg" />
+    <Resource Include="Assets\Memory game photos\Hard\unnamed.jpg" />
+    <Resource Include="Assets\Memory game photos\Normal\Ancient-Egyptian-Symbols-Egypt-Tours-Portal.jpg" />
+    <Resource Include="Assets\Memory game photos\Normal\Ancient-Egyptian-Symbols-Egypt-Tours-Portal1.jpg" />
+    <Resource Include="Assets\Memory game photos\Normal\Ancient-Egyptian-Symbols-Egypt-Tours-Portal17.jpg" />
+    <Resource Include="Assets\Memory game photos\Normal\Ancient-Egyptian-Symbols-Egypt-Tours-Portal18.jpg" />
+    <Resource Include="Assets\Memory game photos\Normal\Ancient-Egyptian-Symbols-Egypt-Tours-Portal8.jpg" />
+    <Resource Include="Assets\Memory game photos\Normal\Ancient-Egyptian-Symbols-Egypt-Tours-Portal9.jpg" />
     <Content Include="Music\bensound-theelevatorbossanova.mp3" />
     <Content Include="Music\bensound-theelevatorbossanova.wav" />
     <Resource Include="Music\music_off.png" />

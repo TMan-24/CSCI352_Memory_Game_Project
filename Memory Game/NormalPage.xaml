@@ -8,7 +8,25 @@
       d:DesignHeight="800" d:DesignWidth="1150"
       Title="NormalPage" Loaded="Normal_Loaded">
 
-    <Grid OpacityMask="Black">
+    <Grid>
+        <!--Grid for buttons-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90*" />
+            <RowDefinition Height="140*" />
+            <RowDefinition Height="140*"/>
+            <RowDefinition Height="140*"/>
+            <RowDefinition Height="120*"/>
+        </Grid.RowDefinitions>
+
+        <!--Wood Background-->
         <Grid.Background>
             <ImageBrush ImageSource="Assets/wood_background.jpg">
                 <ImageBrush.RelativeTransform>
@@ -21,13 +39,14 @@
                 </ImageBrush.RelativeTransform>
             </ImageBrush>
         </Grid.Background>
-        <Button Content="Return" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Height="56" Margin="964,707,0,0" Click="Button_Click" Background="#FFDFDFDF"/>
-        <Label Content="Score:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="64" Width="134" Margin="795,2,0,0" FontSize="48" FontFamily="Ink Free" FontWeight="Bold" Foreground="White"/>
-        <Label Content="Highscore:" HorizontalAlignment="Left" Margin="86,2,0,0" VerticalAlignment="Top" Height="68" Width="236" FontSize="48" FontFamily="Ink Free" FontWeight="Bold" Foreground="White"/>
-        <Label Name="Scorenum" Content="0" HorizontalAlignment="Left" Margin="937,3,0,0" VerticalAlignment="Top" Height="71" Width="163" FontFamily="Ink Free" FontSize="48" FontWeight="Bold" Foreground="White"/>
-        <Label Name="Highscorenum" Content="0" HorizontalAlignment="Left" Margin="318,5,0,0" VerticalAlignment="Top" Height="68" Width="187" FontSize="48" FontFamily="Ink Free" FontWeight="Bold" Foreground="White"/>
-        <Label x:Name="Timer" Content="0" HorizontalAlignment="Center" Margin="566,5,417.4,0" VerticalAlignment="Top" Height="68" Width="167" FontSize="48" FontFamily="Ink Free" FontWeight="Bold" Foreground="White"/>
-        <Button x:Name="Music_off" Content="" HorizontalAlignment="Left" Margin="30,709,0,0" VerticalAlignment="Top" Width="88" Height="66" BorderBrush="{x:Null}" Foreground="White" Click="Music_off_Click">
+
+        <!--Page content-->
+        <Button Name="Pause" Content="Pause" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Height="56" Margin="30,30.2,0,0" Click="Button_Click" Background="#FFDFDFDF" Grid.Column="5" Grid.Row="4" FontFamily="Ink Free" FontSize="48" FontWeight="Bold"/>
+        <Label Name="Scorelabel" Content="Score:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="64" Width="134" Margin="73.8,4,0,0" FontSize="48" FontFamily="Ink Free" FontWeight="Bold" Foreground="White" Grid.ColumnSpan="2" Grid.Column="4"/>
+        <Label Name="Timelabel" Content="Time: " HorizontalAlignment="Left" Margin="94,0,0,0" VerticalAlignment="Top" Height="68" Width="142" FontSize="48" FontFamily="Ink Free" FontWeight="Bold" Foreground="White" Grid.ColumnSpan="2"/>
+        <Label Name="Scorenum" Content="0" HorizontalAlignment="Left" Margin="22.8,6,0,0" VerticalAlignment="Top" Height="71" Width="163" FontFamily="Ink Free" FontSize="48" FontWeight="Bold" Foreground="White" Grid.Column="5"/>
+        <Label x:Name="Timernum" Content="70" HorizontalAlignment="Center" Margin="34,3,186,0" VerticalAlignment="Top" Height="68" Width="164" FontSize="48" FontFamily="Ink Free" FontWeight="Bold" Foreground="White" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Button x:Name="Music_off" Content="" HorizontalAlignment="Left" Margin="30,30,0,0" VerticalAlignment="Top" Width="88" Height="66" BorderBrush="{x:Null}" Foreground="White" Click="Music_off_Click" Grid.Row="4">
             <Button.Background>
                 <ImageBrush ImageSource="Music/music_on.png"/>
             </Button.Background>
@@ -50,7 +69,7 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Button Name="Music_on" Content="" HorizontalAlignment="Left" Margin="30,709,0,0" VerticalAlignment="Top" Width="88" Height="66" BorderBrush="{x:Null}" Foreground="White" Click="Music_on_Click">
+        <Button Name="Music_on" Content="" HorizontalAlignment="Left" Margin="30,30,0,0" VerticalAlignment="Top" Width="88" Height="66" BorderBrush="{x:Null}" Foreground="White" Click="Music_on_Click" Grid.Row="4">
             <Button.Background>
                 <ImageBrush ImageSource="Music/music_off.png"/>
             </Button.Background>
@@ -73,5 +92,141 @@
                 </Style>
             </Button.Style>
         </Button>
+
+        <!-- Cover Photos-->
+        <Button Name="Picture1" Grid.Row="1" Grid.Column="1" Click="Pic1_Click_1">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/coverimage.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Picture2" Grid.Row="1" Grid.Column="2" Click="Pic2_Click_2">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/coverimage.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Picture3" Grid.Row="1" Grid.Column="3" Click="Pic3_Click_3">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/coverimage.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Picture4" Grid.Row="1" Grid.Column="4" Click="Pic4_Click_4">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/coverimage.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Picture5" Grid.Row="2" Grid.Column="1" Click="Pic5_Click_5">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/coverimage.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Picture6" Grid.Row="2" Grid.Column="2" Click="Pic6_Click_6">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/coverimage.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Picture7" Grid.Row="2" Grid.Column="3" Click="Pic7_Click_7">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/coverimage.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Picture8" Grid.Row="2" Grid.Column="4" Click="Pic8_Click_8">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/coverimage.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Picture9" Grid.Row="3" Grid.Column="1" Click="Pic9_Click_9">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/coverimage.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Picture10" Grid.Row="3" Grid.Column="2" Click="Pic10_Click_10">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/coverimage.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Picture11" Grid.Row="3" Grid.Column="3" Click="Pic11_Click_11">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/coverimage.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Picture12" Grid.Row="3" Grid.Column="4" Click="Pic12_Click_12">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/coverimage.png"/>
+            </Button.Background>
+        </Button>
+
+        <!--Picture buttons under cover photo buttons -->
+        <Label Name ="Label1" Content="" Grid.Row="1" Grid.Column="1" Visibility="Hidden" >
+            <Label.Background>
+                <!--Person standing right-->
+                <ImageBrush ImageSource="Assets/Memory game photos/Normal/Ancient-Egyptian-Symbols-Egypt-Tours-Portal.jpg"/>
+            </Label.Background>
+        </Label>
+        <Label Name ="Label2" Content="" Grid.Row="1" Grid.Column="2" Visibility="Hidden" >
+            <Label.Background>
+                <!--Bird-->
+                <ImageBrush ImageSource="Assets/Memory game photos/Normal/Ancient-Egyptian-Symbols-Egypt-Tours-Portal18.jpg"/>
+            </Label.Background>
+        </Label>
+        <Label Name ="Label3" Content="" Grid.Row="1" Grid.Column="3" Visibility="Hidden" >
+            <Label.Background>
+                <!--Long tablet-->
+                <ImageBrush ImageSource="Assets/Memory game photos/Normal/Ancient-Egyptian-Symbols-Egypt-Tours-Portal1.jpg"/>
+            </Label.Background>
+        </Label>
+        <Label Name ="Label4" Content="" Grid.Row="1" Grid.Column="4" Visibility="Hidden" >
+            <Label.Background>
+                <!--airplane wings-->
+                <ImageBrush ImageSource="Assets/Memory game photos/Normal/Ancient-Egyptian-Symbols-Egypt-Tours-Portal9.jpg"/>
+            </Label.Background>
+        </Label>
+        <Label Name ="Label5" Content="" Grid.Row="2" Grid.Column="1" Visibility="Hidden" >
+            <Label.Background>
+                <!--short tablet-->
+                <ImageBrush ImageSource="Assets/Memory game photos/Normal/Ancient-Egyptian-Symbols-Egypt-Tours-Portal17.jpg"/>
+            </Label.Background>
+        </Label>
+        <Label Name ="Label6" Content="" Grid.Row="2" Grid.Column="2" Visibility="Hidden" >
+            <Label.Background>
+                <!--airplane wings-->
+                <ImageBrush ImageSource="Assets/Memory game photos/Normal/Ancient-Egyptian-Symbols-Egypt-Tours-Portal9.jpg"/>
+            </Label.Background>
+        </Label>
+        <Label Name ="Label7" Content="" Grid.Row="2" Grid.Column="3" Visibility="Hidden" >
+            <Label.Background>
+                <!--Person standing left-->
+                <ImageBrush ImageSource="Assets/Memory game photos/Normal/Ancient-Egyptian-Symbols-Egypt-Tours-Portal8.jpg"/>
+            </Label.Background>
+        </Label>
+        <Label Name ="Label8" Content="" Grid.Row="2" Grid.Column="4" Visibility="Hidden" >
+            <Label.Background>
+                <!--Long Tablet-->
+                <ImageBrush ImageSource="Assets/Memory game photos/Normal/Ancient-Egyptian-Symbols-Egypt-Tours-Portal1.jpg"/>
+            </Label.Background>
+        </Label>
+        <Label Name ="Label9" Content="" Grid.Row="3" Grid.Column="1" Visibility="Hidden" >
+            <Label.Background>
+                <!--Bird-->
+                <ImageBrush ImageSource="Assets/Memory game photos/Normal/Ancient-Egyptian-Symbols-Egypt-Tours-Portal18.jpg"/>
+            </Label.Background>
+        </Label>
+        <Label Name ="Label10" Content="" Grid.Row="3" Grid.Column="2" Visibility="Hidden" >
+            <Label.Background>
+                <!--Person Standing Left-->
+                <ImageBrush ImageSource="Assets/Memory game photos/Normal/Ancient-Egyptian-Symbols-Egypt-Tours-Portal8.jpg"/>
+            </Label.Background>
+        </Label>
+        <Label Name ="Label11" Content="" Grid.Row="3" Grid.Column="3" Visibility="Hidden" >
+            <Label.Background>
+                <!--Short tablet-->
+                <ImageBrush ImageSource="Assets/Memory game photos/Normal/Ancient-Egyptian-Symbols-Egypt-Tours-Portal17.jpg"/>
+            </Label.Background>
+        </Label>
+        <Label Name ="Label12" Content="" Grid.Row="3" Grid.Column="4" Visibility="Hidden" >
+            <Label.Background>
+                <!--Person standing right-->
+                <ImageBrush ImageSource="Assets/Memory game photos/Normal/Ancient-Egyptian-Symbols-Egypt-Tours-Portal.jpg"/>
+            </Label.Background>
+        </Label>
     </Grid>
 </Page>

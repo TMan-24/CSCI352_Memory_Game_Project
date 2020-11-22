@@ -12,55 +12,9 @@
         <Grid.Background>
             <ImageBrush Stretch="UniformToFill" ImageSource="Assets/black_background.jpg"/>
         </Grid.Background>
-        <Label Content="MEMORY GAME" HorizontalAlignment="Left" Margin="60,60,0,0" VerticalAlignment="Top" Height="205" Width="1022" FontSize="120" FontFamily="Segoe Print" Foreground="#FF07C2FA"/>
-        <Button Content="EASY" HorizontalAlignment="Left" VerticalAlignment="Top" Width="212" Height="61" Margin="466.5,324,0,0" Opacity="0.98" FontFamily="Ink Free" FontSize="48" Click="Easy_Click"/>
-        <Button Content="NORMAL" HorizontalAlignment="Left" VerticalAlignment="Top" Width="212" Height="61" Margin="466.5,424,0,0" FontSize="48" FontFamily="Ink Free" Click="Normal_Click"/>
-        <Button Content="HARD" HorizontalAlignment="Left" VerticalAlignment="Top" Width="212" Height="61" Margin="466.5,524,0,0" FontFamily="Ink Free" FontSize="48" Click="Hard_Click"/>
-        <Button x:Name="Music_off" Content="" HorizontalAlignment="Left" Margin="30,709,0,0" VerticalAlignment="Top" Width="88" Height="66" BorderBrush="{x:Null}" Foreground="White" Click="Music_off_Click">
-            <Button.Background>
-                <ImageBrush ImageSource="Music/music_on.png"/>
-            </Button.Background>
-            <Button.Style>
-                <Style TargetType="Button">
-                    <Setter Property="Template">
-                        <Setter.Value>
-                            <ControlTemplate TargetType="Button">
-                                <Grid Background="{TemplateBinding Background}">
-                                    <VisualStateManager.VisualStateGroups>
-                                        <VisualStateGroup x:Name="CommonStates">
-                                            <VisualState x:Name="Normal"/>
-                                            <VisualState x:Name="MouseOver"/>
-                                        </VisualStateGroup>
-                                    </VisualStateManager.VisualStateGroups>
-                                </Grid>
-                            </ControlTemplate>
-                        </Setter.Value>
-                    </Setter>
-                </Style>
-            </Button.Style>
-        </Button>
-        <Button Name="Music_on" Content="" HorizontalAlignment="Left" Margin="30,709,0,0" VerticalAlignment="Top" Width="88" Height="66" BorderBrush="{x:Null}" Foreground="White" Click="Music_on_Click">
-            <Button.Background>
-                <ImageBrush ImageSource="Music/music_off.png"/>
-            </Button.Background>
-            <Button.Style>
-                <Style TargetType="Button">
-                    <Setter Property="Template">
-                        <Setter.Value>
-                            <ControlTemplate TargetType="Button">
-                                <Grid Background="{TemplateBinding Background}">
-                                    <VisualStateManager.VisualStateGroups>
-                                        <VisualStateGroup x:Name="CommonStates">
-                                            <VisualState x:Name="Normal"/>
-                                            <VisualState x:Name="MouseOver"/>
-                                        </VisualStateGroup>
-                                    </VisualStateManager.VisualStateGroups>
-                                </Grid>
-                            </ControlTemplate>
-                        </Setter.Value>
-                    </Setter>
-                </Style>
-            </Button.Style>
-        </Button>
+        <Label Name="Memorygamelabel" Content="MEMORY GAME" HorizontalAlignment="Left" Margin="60,60,0,0" VerticalAlignment="Top" Height="205" Width="1022" FontSize="120" FontFamily="Segoe Print" Foreground="#FF07C2FA"/>
+        <Button Name="Easypage" Content="EASY" HorizontalAlignment="Left" VerticalAlignment="Top" Width="212" Height="61" Margin="466.5,324,0,0" Opacity="0.98" FontFamily="Ink Free" FontSize="48" Click="Easy_Click" FontWeight="Bold"/>
+        <Button Name="Normalpage" Content="NORMAL" HorizontalAlignment="Left" VerticalAlignment="Top" Width="212" Height="61" Margin="466.5,424,0,0" FontSize="48" FontFamily="Ink Free" Click="Normal_Click" FontWeight="Bold"/>
+        <Button Name="Hardpage" Content="HARD" HorizontalAlignment="Left" VerticalAlignment="Top" Width="212" Height="61" Margin="466.5,524,0,0" FontFamily="Ink Free" FontSize="48" Click="Hard_Click" FontWeight="Bold"/>
     </Grid>
 </Page>

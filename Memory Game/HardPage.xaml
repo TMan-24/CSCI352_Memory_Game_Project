@@ -9,6 +9,25 @@
       Title="HardPage" Loaded="Hard_Loaded">
 
     <Grid>
+        <!--Grid for buttons-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90*" />
+            <RowDefinition Height="140*" />
+            <RowDefinition Height="140*"/>
+            <RowDefinition Height="140*"/>
+            <RowDefinition Height="140*"/>
+            <RowDefinition Height="120*"/>
+        </Grid.RowDefinitions>
+
+        <!--Wood Background-->
         <Grid.Background>
             <ImageBrush ImageSource="Assets/wood_background.jpg">
                 <ImageBrush.RelativeTransform>
@@ -21,13 +40,14 @@
                 </ImageBrush.RelativeTransform>
             </ImageBrush>
         </Grid.Background>
-        <Button Content="Return" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Height="56" Margin="964,707,0,0" Click="Button_Click" Background="#FFDFDFDF"/>
-        <Label Content="Score:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="64" Width="134" Margin="795,2,0,0" FontSize="48" FontFamily="Ink Free" FontWeight="Bold" Foreground="White"/>
-        <Label Content="Highscore:" HorizontalAlignment="Left" Margin="86,2,0,0" VerticalAlignment="Top" Height="68" Width="236" FontSize="48" FontFamily="Ink Free" FontWeight="Bold" Foreground="White"/>
-        <Label Name="Scorenum" Content="0" HorizontalAlignment="Left" Margin="937,3,0,0" VerticalAlignment="Top" Height="71" Width="163" FontFamily="Ink Free" FontSize="48" FontWeight="Bold" Foreground="White"/>
-        <Label Name="Highscorenum" Content="0" HorizontalAlignment="Left" Margin="318,5,0,0" VerticalAlignment="Top" Height="68" Width="187" FontSize="48" FontFamily="Ink Free" FontWeight="Bold" Foreground="White"/>
-        <Label x:Name="Timer" Content="0" HorizontalAlignment="Center" Margin="566,5,409.4,0" VerticalAlignment="Top" Height="68" Width="175" FontSize="48" FontFamily="Ink Free" FontWeight="Bold" Foreground="White"/>
-        <Button x:Name="Music_off" Content="" HorizontalAlignment="Left" Margin="30,709,0,0" VerticalAlignment="Top" Width="88" Height="66" BorderBrush="{x:Null}" Foreground="White" Click="Music_off_Click">
+
+        <!--Page content-->
+        <Button Name="Pause" Content="Pause" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Height="56" Margin="20,170.4,0,0" Click="Button_Click" Background="#FFDFDFDF" Grid.Column="5" Grid.Row="4" FontFamily="Ink Free" FontSize="48" FontWeight="Bold" Grid.RowSpan="2"/>
+        <Label Name="Scorelabel" Content="Score:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="64" Width="134" Margin="65,7,0,0" FontSize="48" FontFamily="Ink Free" FontWeight="Bold" Foreground="White" Grid.Column="4" Grid.ColumnSpan="2"/>
+        <Label Name="Timelabel" Content="Time: " HorizontalAlignment="Left" Margin="94,0,0,0" VerticalAlignment="Top" Height="68" Width="142" FontSize="48" FontFamily="Ink Free" FontWeight="Bold" Foreground="White" Grid.ColumnSpan="2"/>
+        <Label Name="Scorenum" Content="0" HorizontalAlignment="Left" Margin="22.8,6,0,0" VerticalAlignment="Top" Height="71" Width="163" FontFamily="Ink Free" FontSize="48" FontWeight="Bold" Foreground="White" Grid.Column="5" Grid.ColumnSpan="2"/>
+        <Label x:Name="Timernum" Content="75" HorizontalAlignment="Center" Margin="34,3,186,0" VerticalAlignment="Top" Height="68" Width="164" FontSize="48" FontFamily="Ink Free" FontWeight="Bold" Foreground="White" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Button x:Name="Music_off" Content="" HorizontalAlignment="Left" Margin="30,170.4,0,0" VerticalAlignment="Top" Width="88" Height="66" BorderBrush="{x:Null}" Foreground="White" Click="Music_off_Click" Grid.Row="4" Grid.RowSpan="2">
             <Button.Background>
                 <ImageBrush ImageSource="Music/music_on.png"/>
             </Button.Background>
@@ -50,7 +70,7 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Button Name="Music_on" Content="" HorizontalAlignment="Left" Margin="30,709,0,0" VerticalAlignment="Top" Width="88" Height="66" BorderBrush="{x:Null}" Foreground="White" Click="Music_on_Click">
+        <Button Name="Music_on" Content="" HorizontalAlignment="Left" Margin="30,170.4,0,0" VerticalAlignment="Top" Width="88" Height="66" BorderBrush="{x:Null}" Foreground="White" Click="Music_on_Click" Grid.Row="4" Grid.RowSpan="2">
             <Button.Background>
                 <ImageBrush ImageSource="Music/music_off.png"/>
             </Button.Background>
@@ -73,5 +93,185 @@
                 </Style>
             </Button.Style>
         </Button>
+
+        <!--Cover Photos-->
+        <Button Name="Picture1" Grid.Row="1" Grid.Column="1" Click="Pic1_Click_1">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/coverimage.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Picture2" Grid.Row="1" Grid.Column="2" Click="Pic2_Click_2">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/coverimage.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Picture3" Grid.Row="1" Grid.Column="3" Click="Pic3_Click_3">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/coverimage.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Picture4" Grid.Row="1" Grid.Column="4" Click="Pic4_Click_4">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/coverimage.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Picture5" Grid.Row="2" Grid.Column="1" Click="Pic5_Click_5">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/coverimage.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Picture6" Grid.Row="2" Grid.Column="2" Click="Pic6_Click_6">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/coverimage.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Picture7" Grid.Row="2" Grid.Column="3" Click="Pic7_Click_7">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/coverimage.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Picture8" Grid.Row="2" Grid.Column="4" Click="Pic8_Click_8">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/coverimage.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Picture9" Grid.Row="3" Grid.Column="1" Click="Pic9_Click_9">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/coverimage.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Picture10" Grid.Row="3" Grid.Column="2" Click="Pic10_Click_10">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/coverimage.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Picture11" Grid.Row="3" Grid.Column="3" Click="Pic11_Click_11">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/coverimage.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Picture12" Grid.Row="3" Grid.Column="4" Click="Pic12_Click_12">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/coverimage.png"/>
+            </Button.Background>
+        </Button>
+         <Button Name="Picture13" Grid.Row="4" Grid.Column="1" Click="Pic13_Click_13">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/coverimage.png"/>
+            </Button.Background>
+        </Button>
+         <Button Name="Picture14" Grid.Row="4" Grid.Column="2" Click="Pic14_Click_14">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/coverimage.png"/>
+            </Button.Background>
+        </Button>
+         <Button Name="Picture15" Grid.Row="4" Grid.Column="3" Click="Pic15_Click_15">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/coverimage.png"/>
+            </Button.Background>
+        </Button>
+         <Button Name="Picture16" Grid.Row="4" Grid.Column="4" Click="Pic16_Click_16">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/coverimage.png"/>
+            </Button.Background>
+        </Button>
+
+        <!--Picture buttons under cover photo buttons -->
+        <Label Name ="Label1" Content="" Grid.Row="1" Grid.Column="1" Visibility="Hidden" >
+            <Label.Background>
+                <!--matches label11-->
+                <ImageBrush ImageSource="Assets/Memory game photos/Hard/1.jpg"/>
+            </Label.Background>
+        </Label>
+        <Label Name ="Label2" Content="" Grid.Row="1" Grid.Column="2" Visibility="Hidden" >
+            <Label.Background>
+                <!--unsolved cube-->
+                <ImageBrush ImageSource="Assets/Memory game photos/Hard/depositphotos_35644115-stock-photo-rubiks-cube-on-a-white1.jpg"/>
+            </Label.Background>
+        </Label>
+        <Label Name ="Label3" Content="" Grid.Row="1" Grid.Column="3" Visibility="Hidden" >
+            <Label.Background>
+                <!--Blue dot in the middle-->
+                <ImageBrush ImageSource="Assets/Memory game photos/Hard/teach-you-how-to-solve-a-rubiks-cube-3x3.jpeg"/>
+            </Label.Background>
+        </Label>
+        <Label Name ="Label4" Content="" Grid.Row="1" Grid.Column="4" Visibility="Hidden" >
+            <Label.Background>
+                <!--left side of cube is turning-->
+                <ImageBrush ImageSource="Assets/Memory game photos/Hard/HDN_PH-Rubiks-cube.13249.jpg"/>
+            </Label.Background>
+        </Label>
+        <Label Name ="Label5" Content="" Grid.Row="2" Grid.Column="1" Visibility="Hidden" >
+            <Label.Background>
+                <!--Both sides of cube are turning-->
+                <ImageBrush ImageSource="Assets/Memory game photos/Hard/12wmt-articleLarge-v5.jpg"/>
+            </Label.Background>
+        </Label>
+        <Label Name ="Label6" Content="" Grid.Row="2" Grid.Column="2" Visibility="Hidden" >
+            <Label.Background>
+                <!--Green upside down L-->
+                <ImageBrush ImageSource="Assets/Memory game photos/Hard/Rubiks_Cube-900x522.jpg"/>
+            </Label.Background>
+        </Label>
+        <Label Name ="Label7" Content="" Grid.Row="2" Grid.Column="3" Visibility="Hidden" >
+            <Label.Background>
+                <!--Red Dot in the middle-->
+                <ImageBrush ImageSource="Assets/Memory game photos/Hard/pexels-photo-2554461.jpeg"/>
+            </Label.Background>
+        </Label>
+        <Label Name ="Label8" Content="" Grid.Row="2" Grid.Column="4" Visibility="Hidden" >
+            <Label.Background>
+                <!--Diffent than 9-->
+                <ImageBrush ImageSource="Assets/Memory game photos/Hard/unnamed.jpg"/>
+            </Label.Background>
+        </Label>
+        <Label Name ="Label9" Content="" Grid.Row="3" Grid.Column="1" Visibility="Hidden" >
+            <Label.Background>
+                <!--Blue dot in the middle-->
+                <ImageBrush ImageSource="Assets/Memory game photos/Hard/teach-you-how-to-solve-a-rubiks-cube-3x3.jpeg"/>
+            </Label.Background>
+        </Label>
+        <Label Name ="Label10" Content="" Grid.Row="3" Grid.Column="2" Visibility="Hidden" >
+            <Label.Background>
+                <!--Different than 9-->
+                <ImageBrush ImageSource="Assets/Memory game photos/Hard/unnamed.jpg"/>
+            </Label.Background>
+        </Label>
+        <Label Name ="Label11" Content="" Grid.Row="3" Grid.Column="3" Visibility="Hidden" >
+            <Label.Background>
+                <!--matches label1-->
+                <ImageBrush ImageSource="Assets/Memory game photos/Hard/1.jpg"/>
+            </Label.Background>
+        </Label>
+        <Label Name ="Label12" Content="" Grid.Row="3" Grid.Column="4" Visibility="Hidden" >
+            <Label.Background>
+                <!--Both sides of the cube are turning-->
+                <ImageBrush ImageSource="Assets/Memory game photos/Hard/12wmt-articleLarge-v5.jpg"/>
+            </Label.Background>
+        </Label>
+        <Label Name ="Label13" Content="" Grid.Row="4" Grid.Column="1" Visibility="Hidden" >
+            <Label.Background>
+                <!--Green upside down L-->
+                <ImageBrush ImageSource="Assets/Memory game photos/Hard/Rubiks_Cube-900x522.jpg"/>
+            </Label.Background>
+        </Label>
+        <Label Name ="Label14" Content="" Grid.Row="4" Grid.Column="2" Visibility="Hidden" >
+            <Label.Background>
+                <!--Red Dot in the middle-->
+                <ImageBrush ImageSource="Assets/Memory game photos/Hard/pexels-photo-2554461.jpeg"/>
+            </Label.Background>
+        </Label>
+        <Label Name ="Label15" Content="" Grid.Row="4" Grid.Column="3" Visibility="Hidden" >
+            <Label.Background>
+                <!--left side of cube is turning-->
+                <ImageBrush ImageSource="Assets/Memory game photos/Hard/HDN_PH-Rubiks-cube.13249.jpg"/>
+            </Label.Background>
+        </Label>
+        <Label Name ="Label16" Content="" Grid.Row="4" Grid.Column="4" Visibility="Hidden" >
+            <Label.Background>
+                <!--unsolved cube-->
+                <ImageBrush ImageSource="Assets/Memory game photos/Hard/depositphotos_35644115-stock-photo-rubiks-cube-on-a-white1.jpg"/>
+            </Label.Background>
+        </Label>
     </Grid>
 </Page>

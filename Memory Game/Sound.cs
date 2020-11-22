@@ -10,9 +10,10 @@ namespace Memory_Game
 {
     class Sound
     {
+        //Creating a new mediaplayer
         private static MediaPlayer mediaPlayer = new MediaPlayer();
 
-
+        //Opening music file
         public static void OpenMusic(string relativePath)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -23,6 +24,8 @@ namespace Memory_Game
                 mediaPlayer.Play();
             }
         }
+
+        //Playing the music
         public static void PlayBackgroundMusic()
         {
             mediaPlayer.Open(new Uri(Path.Combine(Environment.CurrentDirectory, @"C:\Users\tmanr\source\repos\Memory Game\Memory Game\Music\bensound-theelevatorbossanova.mp3")));
@@ -31,6 +34,7 @@ namespace Memory_Game
             
         }
 
+        //Muting to the music
         public static void MuteBackgroundMusic()
         {
             mediaPlayer.Stop();

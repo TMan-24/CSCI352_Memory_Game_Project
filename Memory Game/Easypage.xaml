@@ -9,6 +9,23 @@
       Title="Easypage" Loaded="Easy_Loaded">
 
     <Grid>
+        <!--Grid for buttons-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120*" />
+            <RowDefinition Height="180*" />
+            <RowDefinition Height="180*"/>
+            <RowDefinition Height="180*"/>
+            <RowDefinition Height="120*"/>
+        </Grid.RowDefinitions>
+
+        <!--Wood Background-->
         <Grid.Background>
             <ImageBrush ImageSource="Assets/wood_background.jpg">
                 <ImageBrush.RelativeTransform>
@@ -21,13 +38,14 @@
                 </ImageBrush.RelativeTransform>
             </ImageBrush>
         </Grid.Background>
-        <Button Content="Return" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Height="56" Margin="964,707,0,0" Click="Button_Click" Background="#FFDFDFDF"/>
-        <Label Content="Score:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="64" Width="134" Margin="795,2,0,0" FontSize="48" FontFamily="Ink Free" FontWeight="Bold" Foreground="White"/>
-        <Label Content="Highscore:" HorizontalAlignment="Left" Margin="86,2,0,0" VerticalAlignment="Top" Height="68" Width="236" FontSize="48" FontFamily="Ink Free" FontWeight="Bold" Foreground="White"/>
-        <Label Name="Scorenum" Content="0" HorizontalAlignment="Left" Margin="937,3,0,0" VerticalAlignment="Top" Height="71" Width="163" FontFamily="Ink Free" FontSize="48" FontWeight="Bold" Foreground="White"/>
-        <Label Name="Highscorenum" Content="0" HorizontalAlignment="Left" Margin="318,5,0,0" VerticalAlignment="Top" Height="68" Width="187" FontSize="48" FontFamily="Ink Free" FontWeight="Bold" Foreground="White"/>
-        <Label x:Name="Timer" Content="0" HorizontalAlignment="Center" Margin="566,5,420.4,0" VerticalAlignment="Top" Height="68" Width="164" FontSize="48" FontFamily="Ink Free" FontWeight="Bold" Foreground="White"/>
-        <Button x:Name="Music_off" Content="" HorizontalAlignment="Left" Margin="30,709,0,0" VerticalAlignment="Top" Width="88" Height="66" BorderBrush="{x:Null}" Foreground="White" Click="Music_off_Click">
+
+        <!--Page content-->
+        <Button Name="Pause" Content="Pause" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Height="56" Margin="60,30.2,0,0" Click="Button_Click" Background="#FFDFDFDF" Grid.Column="4" Grid.Row="4" FontFamily="Ink Free" FontSize="48" FontWeight="Bold"/>
+        <Label Name="Scorelabel" Content="Score:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="64" Width="134" Margin="104.6,2,0,0" FontSize="48" FontFamily="Ink Free" FontWeight="Bold" Foreground="White" Grid.ColumnSpan="2" Grid.Column="3"/>
+        <Label Name="Timelabel" Content="Time: " HorizontalAlignment="Left" Margin="86,2,0,0" VerticalAlignment="Top" Height="68" Width="142" FontSize="48" FontFamily="Ink Free" FontWeight="Bold" Foreground="White"/>
+        <Label Name="Scorenum" Content="0" HorizontalAlignment="Left" Margin="17,3,0,0" VerticalAlignment="Top" Height="71" Width="163" FontFamily="Ink Free" FontSize="48" FontWeight="Bold" Foreground="White" Grid.Column="4"/>
+        <Label x:Name="Timernum" Content="65" HorizontalAlignment="Center" Margin="225,1,71.8,0" VerticalAlignment="Top" Height="68" Width="164" FontSize="48" FontFamily="Ink Free" FontWeight="Bold" Foreground="White" Grid.ColumnSpan="2"/>
+        <Button x:Name="Music_off" Content="" HorizontalAlignment="Left" Margin="30,30,0,0" VerticalAlignment="Top" Width="88" Height="66" BorderBrush="{x:Null}" Foreground="White" Click="Music_off_Click" Grid.Row="4">
             <Button.Background>
                 <ImageBrush ImageSource="Music/music_on.png"/>
             </Button.Background>
@@ -50,7 +68,7 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Button Name="Music_on" Content="" HorizontalAlignment="Left" Margin="30,709,0,0" VerticalAlignment="Top" Width="88" Height="66" BorderBrush="{x:Null}" Foreground="White" Click="Music_on_Click">
+        <Button Name="Music_on" Content="" HorizontalAlignment="Left" Margin="30,30,0,0" VerticalAlignment="Top" Width="88" Height="66" BorderBrush="{x:Null}" Foreground="White" Click="Music_on_Click" Grid.Row="4">
             <Button.Background>
                 <ImageBrush ImageSource="Music/music_off.png"/>
             </Button.Background>
@@ -73,6 +91,100 @@
                 </Style>
             </Button.Style>
         </Button>
+
+        <!-- Cover Photos -->
+        <Button Name="Picture1" Grid.Row="1" Grid.Column="1" Click="Pic1_Click_1">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/coverimage.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Picture2" Grid.Row="1" Grid.Column="2" Click="Pic2_Click_2">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/coverimage.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Picture3" Grid.Row="1" Grid.Column="3" Click="Pic3_Click_3">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/coverimage.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Picture4" Grid.Row="2" Grid.Column="1" Click="Pic4_Click_4">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/coverimage.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Picture5" Grid.Row="2" Grid.Column="3" Click="Pic5_Click_5">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/coverimage.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Picture6" Grid.Row="3" Grid.Column="1" Click="Pic6_Click_6">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/coverimage.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Picture7" Grid.Row="3" Grid.Column="2" Click="Pic7_Click_7">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/coverimage.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Picture8" Grid.Row="3" Grid.Column="3" Click="Pic8_Click_8">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/coverimage.png"/>
+            </Button.Background>
+        </Button>
+
+
+        <!--Picture buttons under cover photo buttons -->
+        <Label Name ="Label1" Content="" Grid.Row="1" Grid.Column="1" Visibility="Hidden" >
+            <Label.Background>
+                <!--CAR-->
+                <ImageBrush ImageSource="Assets/Memory game photos/Easy/13-car-integratedpieces.png"/>
+            </Label.Background>
+        </Label>
+        <Label Name ="Label2" Content="" Grid.Row="1" Grid.Column="2" Visibility="Hidden" >
+            <Label.Background>
+                <!--3-->
+                <ImageBrush ImageSource="Assets/Memory game photos/Easy/353snw-_2969_.jpg"/>
+            </Label.Background>
+        </Label>
+        <Label Name ="Label3" Content="" Grid.Row="1" Grid.Column="3" Visibility="Hidden" >
+            <Label.Background>
+                <!--Bananas-->
+                <ImageBrush ImageSource="Assets/Memory game photos/Easy/Bananas-5c6a36a346e0fb0001f0e4a3.jpg"/>
+            </Label.Background>
+        </Label>
+        <Label Name ="Label4" Content="" Grid.Row="2" Grid.Column="1" Visibility="Hidden" >
+            <Label.Background>
+                <!--4-->
+                <ImageBrush ImageSource="Assets/Memory game photos/Easy/download.png"/>
+            </Label.Background>
+        </Label>
+        <Label Name ="Label5" Content="" Grid.Row="2" Grid.Column="3" Visibility="Hidden" >
+            <Label.Background>
+                <!--4-->
+                <ImageBrush ImageSource="Assets/Memory game photos/Easy/download.png"/>
+            </Label.Background>
+        </Label>
+        <Label Name ="Label6" Content="" Grid.Row="3" Grid.Column="1" Visibility="Hidden" >
+            <Label.Background>
+                <!--CAR-->
+                <ImageBrush ImageSource="Assets/Memory game photos/Easy/13-car-integratedpieces.png"/>
+            </Label.Background>
+        </Label>
+        <Label Name ="Label7" Content="" Grid.Row="3" Grid.Column="2" Visibility="Hidden" >
+            <Label.Background>
+                <!--Bananas-->
+                <ImageBrush ImageSource="Assets/Memory game photos/Easy/Bananas-5c6a36a346e0fb0001f0e4a3.jpg"/>
+            </Label.Background>
+        </Label>
+        <Label Name ="Label8" Content="" Grid.Row="3" Grid.Column="3" Visibility="Hidden" >
+            <Label.Background>
+                <!--3-->
+                <ImageBrush ImageSource="Assets/Memory game photos/Easy/353snw-_2969_.jpg"/>
+            </Label.Background>
+        </Label>
+        
 
     </Grid>
 </Page>
