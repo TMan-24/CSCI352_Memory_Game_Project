@@ -45,12 +45,18 @@ namespace Memory_Game
         {
             this.NavigationService.Navigate(new HardPage());
 
+            //Starts music
+            Sound.PlayBackgroundMusic();
+
         }
 
         //Quits game
         private void Quit_Click(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new StartMenu());
+
+            //Starts music
+            Sound.PlayBackgroundMusic();
 
         }
 

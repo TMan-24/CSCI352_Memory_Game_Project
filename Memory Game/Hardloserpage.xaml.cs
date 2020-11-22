@@ -37,12 +37,18 @@ namespace Memory_Game
         private void Restart_Click(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new HardPage());
+
+            //Starts music
+            Sound.PlayBackgroundMusic();
         }
 
         //Quit game
         private void Quit_Click(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new StartMenu());
+
+            //Starts music
+            Sound.PlayBackgroundMusic();
         }
     }
 }

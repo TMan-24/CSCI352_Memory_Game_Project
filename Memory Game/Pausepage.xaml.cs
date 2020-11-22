@@ -46,14 +46,17 @@ namespace Memory_Game
         private void Restart_Click(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new Easypage());
-            
+            //Starts music
+            Sound.PlayBackgroundMusic();
         }
 
         //Quit Game
         private void Quit_Click(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new StartMenu());
-          
+            
+            //Starts music
+            Sound.PlayBackgroundMusic();
         }
 
     }

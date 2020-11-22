@@ -37,6 +37,9 @@ namespace Memory_Game
         private void quits_Click(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new StartMenu());
+            
+            //Starts music
+            Sound.PlayBackgroundMusic();
         }
     }
 }
