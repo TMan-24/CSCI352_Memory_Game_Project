@@ -11,7 +11,7 @@
     <Grid>
         <!--Wood Background-->
         <Grid.Background>
-            <ImageBrush ImageSource="Assets/wood_background.jpg">
+            <ImageBrush ImageSource="Assets/black_background.jpg">
                 <ImageBrush.RelativeTransform>
                     <TransformGroup>
                         <ScaleTransform CenterY="0.5" CenterX="0.5"/>
@@ -24,10 +24,10 @@
         </Grid.Background>
 
         <!--Page content-->
-        <Button Name="Restart" Content="Play Again?" HorizontalAlignment="Left" VerticalAlignment="Top" Width="406" Height="92" Margin="364,507,0,0" Background="#FFDFDFDF" FontFamily="Ink Free" FontSize="48" FontWeight="Bold" Click="Restart_Click"/>
-        <Button Name="Quit" Content="Quit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="406" Margin="364,613,0,0" Height="92" FontSize="48" FontFamily="Ink Free" FontWeight="Bold" Click="Quit_Click"/>
-        <Label Name="loserlabel" Content="SORRY YOU LOST" HorizontalAlignment="Left" VerticalAlignment="Top" Height="170" Width="953" FontSize="120" Margin="108,27,0,0" Background="{x:Null}" Foreground="White"/>
-        <Label Name="Resultslabel" Content="      Results:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="106" Width="486" Margin="322,212,0,0" FontSize="72" Foreground="#FF9D0606"/>
-        <Label Name="Infolabel" Content="Difficulty = Easy&#xA;Matches = does it matter?&#xA;Score = who cares, you lost" HorizontalAlignment="Left" VerticalAlignment="Top" Height="173" Width="480" Margin="348,324,0,0" FontSize="36" Foreground="White"/>
+        <Button Name="Restart" Content="Play Again?" HorizontalAlignment="Left" VerticalAlignment="Top" Width="406" Height="92" Margin="364,507,0,0" Background="#FF1FBA00" FontFamily="Ink Free" FontSize="48" FontWeight="Bold" Click="Restart_Click"/>
+        <Button Name="Quit" Content="Quit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="406" Margin="364,613,0,0" Height="92" FontSize="48" FontFamily="Ink Free" FontWeight="Bold" Click="Quit_Click" Background="#FF1EB600"/>
+        <Label Name="loserlabel" Content="SORRY YOU LOST" HorizontalAlignment="Left" VerticalAlignment="Top" Height="170" Width="1011" FontSize="120" Margin="71,30,0,0" Background="{x:Null}" Foreground="White" FontFamily="Ink Free" FontWeight="Bold"/>
+        <Label Name="Resultslabel" Content="      Results:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="106" Width="486" Margin="322,194,0,0" FontSize="72" Foreground="White" FontFamily="Ink Free" FontWeight="Bold"/>
+        <Label Name="Infolabel" Content="Difficulty = Easy, (even my grandma can do that)&#xA;Matches = does it matter?&#xA;Score = who cares, you lost" HorizontalAlignment="Left" VerticalAlignment="Top" Height="173" Width="842" Margin="179,303,0,0" FontSize="36" Foreground="White" FontFamily="Ink Free" FontWeight="Bold"/>
     </Grid>
 </Page>

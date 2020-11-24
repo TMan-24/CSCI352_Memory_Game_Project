@@ -24,7 +24,7 @@
         </Grid.Background>
 
         <!--Page content-->
-        <Label Name="Pauselabel" Content="PAUSE" HorizontalAlignment="Left" Margin="350,60,0,0" VerticalAlignment="Top" Height="205" Width="450" FontSize="120" FontFamily="Segoe Print" Foreground="Black"/>
+        <Label Name="Pauselabel" Content="PAUSE" HorizontalAlignment="Left" Margin="363,-1,0,0" VerticalAlignment="Top" Height="205" Width="450" FontSize="120" FontFamily="Segoe Print" Foreground="Black"/>
         <Button Name="Resume" Content="RESUME" HorizontalAlignment="Left" VerticalAlignment="Top" Width="240" Height="61" Margin="455,324,0,0" Opacity="0.98" FontFamily="Ink Free" FontSize="48" FontWeight="Bold" Click="Resume_Click"/>
         <Button Name="Restart" Content="RESTART" HorizontalAlignment="Left" VerticalAlignment="Top" Width="240" Height="61" Margin="455,424,0,0" FontSize="48" FontFamily="Ink Free" FontWeight="Bold" Click="Restart_Click"/>
         <Button Name="Quit" Content="QUIT" HorizontalAlignment="Left" VerticalAlignment="Top" Width="240" Height="61" Margin="455,524,0,0" FontFamily="Ink Free" FontSize="48" FontWeight="Bold" Click="Quit_Click"/>

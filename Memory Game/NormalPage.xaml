@@ -45,7 +45,7 @@
         <Label Name="Scorelabel" Content="Score:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="64" Width="134" Margin="73.8,4,0,0" FontSize="48" FontFamily="Ink Free" FontWeight="Bold" Foreground="White" Grid.ColumnSpan="2" Grid.Column="4"/>
         <Label Name="Timelabel" Content="Time: " HorizontalAlignment="Left" Margin="94,0,0,0" VerticalAlignment="Top" Height="68" Width="142" FontSize="48" FontFamily="Ink Free" FontWeight="Bold" Foreground="White" Grid.ColumnSpan="2"/>
         <Label Name="Scorenum" Content="0" HorizontalAlignment="Left" Margin="22.8,6,0,0" VerticalAlignment="Top" Height="71" Width="163" FontFamily="Ink Free" FontSize="48" FontWeight="Bold" Foreground="White" Grid.Column="5"/>
-        <Label x:Name="Timernum" Content="70" HorizontalAlignment="Center" Margin="34,3,186,0" VerticalAlignment="Top" Height="68" Width="164" FontSize="48" FontFamily="Ink Free" FontWeight="Bold" Foreground="White" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Label x:Name="Timernum" Content="65" HorizontalAlignment="Center" Margin="34,3,186,0" VerticalAlignment="Top" Height="68" Width="164" FontSize="48" FontFamily="Ink Free" FontWeight="Bold" Foreground="White" Grid.Column="1" Grid.ColumnSpan="2"/>
         <Button x:Name="Music_off" Content="" HorizontalAlignment="Left" Margin="30,30,0,0" VerticalAlignment="Top" Width="88" Height="66" BorderBrush="{x:Null}" Foreground="White" Click="Music_off_Click" Grid.Row="4">
             <Button.Background>
                 <ImageBrush ImageSource="Music/music_on.png"/>

@@ -37,7 +37,7 @@ namespace Memory_Game
     public partial class NormalPage : Page
     {
         //Timer int
-        private int Increment = 71;
+        private int Increment = 66;
 
         //ALL BOOL VALUES
         bool Once = true;
@@ -77,7 +77,7 @@ namespace Memory_Game
         //Loader
         private void Normal_Loaded(object sender, RoutedEventArgs e)
         {
-            //Showing pictures for 10 secs
+            //Showing pictures for 5 secs
             if (Once == true)
             {
                 Label1.Visibility = Visibility.Visible;
@@ -106,7 +106,7 @@ namespace Memory_Game
         //Timer ticker
         private void Dt_Tick(object sender, EventArgs e)
         {
-            //Hidding the pictures after 10 seconds
+            //Hidding the pictures after 5 seconds
             if (Increment == 61)
             {
                 Once = false;

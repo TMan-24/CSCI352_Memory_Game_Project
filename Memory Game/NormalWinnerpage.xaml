@@ -11,7 +11,7 @@
     <Grid>
         <!--Wood Background-->
         <Grid.Background>
-            <ImageBrush ImageSource="Assets/wood_background.jpg">
+            <ImageBrush ImageSource="Assets/black_background.jpg">
                 <ImageBrush.RelativeTransform>
                     <TransformGroup>
                         <ScaleTransform CenterY="0.5" CenterX="0.5"/>
@@ -24,10 +24,10 @@
         </Grid.Background>
 
         <!--Page content-->
-        <Button Name="quits" Content="  Thanks &#xD;&#xA;for playing" HorizontalAlignment="Left" VerticalAlignment="Top" Width="406" Height="129" Margin="361,550,0,0"  Background="#FFDFDFDF" FontFamily="Ink Free" FontSize="48" FontWeight="Bold" Click="quits_Click"/>
-        <Label Name="winnerlabel" Content="WINNER" HorizontalAlignment="Left" VerticalAlignment="Top" Height="170" Width="486" FontSize="120" Margin="323,27,0,0" Background="{x:Null}" Foreground="White"/>
-        <Label Name="Resultslabel" Content="      Results:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="106" Width="486" Margin="322,212,0,0" FontSize="72" Foreground="#FF9D0606"/>
-        <Label Name="Infolabel" Content="Difficulty = Normal&#xA;Matches = 6&#xA;Score = 60" HorizontalAlignment="Left" VerticalAlignment="Top" Height="173" Width="328" Margin="423,324,0,0" FontSize="36" Foreground="White"/>
+        <Button Name="quits" Content="  Thanks &#xD;&#xA;for playing" HorizontalAlignment="Left" VerticalAlignment="Top" Width="406" Height="129" Margin="361,550,0,0"  Background="#FF2EC200" FontFamily="Ink Free" FontSize="48" FontWeight="Bold" Click="quits_Click"/>
+        <Label Name="winnerlabel" Content="WINNER" HorizontalAlignment="Left" VerticalAlignment="Top" Height="170" Width="521" FontSize="120" Margin="291,31,0,0" Background="{x:Null}" Foreground="White" FontFamily="Ink Free" FontWeight="Bold"/>
+        <Label Name="Resultslabel" Content="      Results:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="106" Width="486" Margin="322,201,0,0" FontSize="72" Foreground="White" FontFamily="Ink Free" FontWeight="Bold"/>
+        <Label Name="Infolabel" Content="Difficulty = Normal (Wow that was easy)&#xA;Matches = 6&#xA;Score = 60" HorizontalAlignment="Left" VerticalAlignment="Top" Height="173" Width="829" Margin="244,314,0,0" FontSize="36" Foreground="White" FontFamily="Ink Free" FontWeight="Bold"/>
 
     </Grid>
 </Page>

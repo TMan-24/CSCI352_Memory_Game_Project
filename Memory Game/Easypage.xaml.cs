@@ -69,9 +69,11 @@ namespace Memory_Game
         //Creating New Timer
         DispatcherTimer dt = new DispatcherTimer();
 
+
         //Loader
         private void Easy_Loaded(object sender, RoutedEventArgs e)
         {
+
             //Showing pictures for 5 secs
             if (Once == true)
             {
